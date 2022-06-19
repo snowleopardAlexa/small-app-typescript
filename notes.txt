@@ -4,3 +4,10 @@
 4. Install axios to make a request 
 5. Write code.
 
+INSTALL PACKAGE.json
+
+npm init -y
+
+NOW
+
+npm install axios 
