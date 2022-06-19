@@ -1,0 +1,6 @@
+1. Take a look at the API we'll use to fetch data
+2. Create a new project directory
+3. Create a package.json file
+4. Install axios to make a request 
+5. Write code.
+
