@@ -68,6 +68,7 @@ If declaration and initialization are on the same line, TS will figure it out th
 
 When to use Type Inference over Type Annotations? 
 - Rely on Type Inference as much as you can because code is cleaner 
+- 
 
 3 case scenarios when it is better to use Type Annotations over Type Inference:
 - when we delcare a variable on one line then initialize it later 
@@ -84,6 +85,9 @@ HOW TO FIX 'ANY' TYPE:
 
 - add type annotations to variables manually 
 
+TYPE SYSTEM:
+
+- only cares about types and NOT about logic inside your code 
 
 
 

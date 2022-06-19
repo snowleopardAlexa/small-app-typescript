@@ -46,8 +46,6 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 
-
-
 /*
 
 // it is not a function 
