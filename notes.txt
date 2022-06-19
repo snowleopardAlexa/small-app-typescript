@@ -1,13 +1,89 @@
-1. Take a look at the API we'll use to fetch data
-2. Create a new project directory
-3. Create a package.json file
-4. Install axios to make a request 
-5. Write code.
+1. Create a new project directory
+2. Create a package.json file
+3. Install axios to make a request 
+4. Write code.
 
-INSTALL PACKAGE.json
+install package.json
 
 npm init -y
 
-NOW
+install axios
 
 npm install axios 
+
+GOALS
+
+1. Understand basic types in types
+2. Function typing + annotations
+3. Type definition files
+4. Arrays in TS
+5. Modules systems
+6. Classes + Refresher on OOP
+7. Projects 
+
+
+TYPES in TS 
+
+- TYPE: it refers to the different properties and functions that a value has 
+- Array, Object, Function, Class has a TYPE
+- "RED" - it is a string | It is a value that has all the properties and methods that we assume that string has
+
+Properties and Methods a 'string' has in JS:
+- charAt(), charCodeAt(), concat(), includes(), endsWith(), indexOf(), lastIndexOf(), localeCompare(), match()
+
+- types are LABELS or SHORTCUTS 
+- every value in TS has a type 
+
+- TYPES : string, number, boolean, date, todo
+- PRIMITIVE TYPES: number, boolean, void, undefined, string, symbol, null
+- OBJECT TYPES: functions, arrays, classes, objects 
+
+Why do we care about types?
+- Types are used by the TS Compiler to analyze our code for errors
+- Types allow other engineers to understand what values are flowing around our codebase 
+
+Where do we use types?
+- everywhere!
+
+
+TYPES ANNOTATIONS + TYPE INFERENCE 
+
+Type annotations:
+- code we add to tell TS what type of value a variable will refer to
+- Developers tell TS the type 
+
+Type inference:
+- TS tries to figure it out what type of value a variable refers to
+- TS guesses the type 
+
+
+Type Inference: do eveything in one line and all will work just fine!
+
+const color - VARIABLE DECLARATION 
+'red' - VARIABLE INITIALIZATION
+
+const color = 'red' - variable delcaration + variable initialization 
+
+If declaration and initialization are on the same line, TS will figure it out the type of 'color' for us
+
+When to use Type Inference over Type Annotations? 
+- Rely on Type Inference as much as you can because code is cleaner 
+
+3 case scenarios when it is better to use Type Annotations over Type Inference:
+- when we delcare a variable on one line then initialize it later 
+- when we want a variable to have a type that can't be inferred 
+- when a function returns the 'any' type and we need to clarify the value 
+
+TYPE ANY:
+
+- a type just as 'string' or 'boolean' are
+- it means TS has no idea what this is - can't check for correct property references
+- avoid variables with 'any' at all costs 
+
+HOW TO FIX 'ANY' TYPE:
+
+- add type annotations to variables manually 
+
+
+
+
