@@ -108,3 +108,4 @@ INTERFACES:
 - interfaces + classes = strong code reuse in TS 
 - you must understand them well
 - creates a new type, describing the property names and values types of an object 
+- thanks to interfaces we fix long type annotations 
