@@ -109,3 +109,27 @@ INTERFACES:
 - you must understand them well
 - creates a new type, describing the property names and values types of an object 
 - thanks to interfaces we fix long type annotations 
+- we can assign any type we want inside interfaces not only primitive values 
+- we can assign functions property and instances
+- we can write reusable code with them 
+
+GENERAL STRATEGY FOR REUSABLE CODE IN TS:
+
+- create functions that accept arguments that are typed with interfaces
+- objects/classes can decide to 'implement' a given interface to work with a function
+
+CLASSES:
+
+- blueprint to create an object with some fields (values) and methods(functions) to represent a 'thing'
+
+INSTANCE METHOD MODIFIERS:
+
+- public - this method can be called any where, any time
+- private - this method can only be called by other methods in this class 
+- protected - this method can be called by other methods in this class, or by other methods in child classes
+
+WHERE TO USE CLASSES:
+
+- classes are used heavily in JS with TS 
+- interfaces + classes 
+
