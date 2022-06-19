@@ -16,12 +16,17 @@ axios.get(url).then(response => {
     const title = todo.title
     const completed = todo.completed
 
-    console.log(`
-     The Todo with ID: ${id}
-     Has a Title of: ${title}
-     Is it finished? ${completed}
-    `)
+    logTodo(id, title, completed)
 })
+
+// new function
+const logTodo = (id: number, title: string, completed: boolean) => {
+    console.log(`
+    The Todo with ID: ${id}
+    Has a Title of: ${title}
+    Is it finished? ${completed}
+   `)
+}
 
 
 /*  
@@ -76,3 +81,53 @@ axios.get(url).then(response => {
 6. Run ts-node index.ts 
 
 */
+
+/*
+
+const url = 'https://jsonplaceholder.typicode.com/todos/1'
+
+// interafce - used to define the structure of objects
+interface Todo {
+  id: number
+  title: string
+  completed: boolean
+}
+
+axios.get(url).then(response => {
+    const todo = response.data as Todo
+
+    const id = todo.id
+    const title = todo.title
+    const completed = todo.completed
+
+    logTodo(id, title, completed)
+})
+
+// new function
+const logTodo = (id: number, title: string, completed: boolean) => {
+    console.log(`
+    The Todo with ID: ${id}
+    Has a Title of: ${title}
+    Is it finished? ${completed}
+   `)
+}
+
+1. Add new function
+2. Copy console.log from previous function to a new function
+3. Delete console.log from old function and call the new function inside it
+4. Run ts-node index.ts - error
+5. Add TS syntax to a new function. 
+6. Hover over completed argument inside first function. The warning says: `Argument of type 'boolean' is not assignable to parameter of type 'string'.`
+7. the logTodo functions says that second argument should be string not a boolean so you need to fix the order of function arguments. 
+
+*/
+
+/*
+
+COMMON ERRORS:
+
+The order of arguments in function 
+Typos in properties
+
+ */
+
