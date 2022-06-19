@@ -11,18 +11,8 @@ install axios
 
 npm install axios 
 
-GOALS
 
-1. Understand basic types in types
-2. Function typing + annotations
-3. Type definition files
-4. Arrays in TS
-5. Modules systems
-6. Classes + Refresher on OOP
-7. Projects 
-
-
-TYPES in TS 
+TYPES 
 
 - TYPE: it refers to the different properties and functions that a value has 
 - Array, Object, Function, Class has a TYPE
@@ -65,6 +55,8 @@ const color - VARIABLE DECLARATION
 const color = 'red' - variable delcaration + variable initialization 
 
 If declaration and initialization are on the same line, TS will figure it out the type of 'color' for us
+
+TYPE ANNOTATIONS & TYPE INFERENCE
 
 When to use Type Inference over Type Annotations? 
 - Rely on Type Inference as much as you can because code is cleaner 
@@ -110,3 +102,9 @@ TUPLES:
 - array-like structure where each element represents some property of a record 
 - the order in tuple has very specific meaning - we can't change it
 - we use tupels rarely with TS 
+
+INTERFACES: 
+
+- interfaces + classes = strong code reuse in TS 
+- you must understand them well
+- creates a new type, describing the property names and values types of an object 
