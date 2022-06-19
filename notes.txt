@@ -1,6 +1,135 @@
-1. Take a look at the API we'll use to fetch data
-2. Create a new project directory
-3. Create a package.json file
-4. Install axios to make a request 
-5. Write code.
+1. Create a new project directory
+2. Create a package.json file
+3. Install axios to make a request 
+4. Write code.
+
+install package.json
+
+npm init -y
+
+install axios
+
+npm install axios 
+
+
+TYPES 
+
+- TYPE: it refers to the different properties and functions that a value has 
+- Array, Object, Function, Class has a TYPE
+- "RED" - it is a string | It is a value that has all the properties and methods that we assume that string has
+
+Properties and Methods a 'string' has in JS:
+- charAt(), charCodeAt(), concat(), includes(), endsWith(), indexOf(), lastIndexOf(), localeCompare(), match()
+
+- types are LABELS or SHORTCUTS 
+- every value in TS has a type 
+
+- TYPES : string, number, boolean, date, todo
+- PRIMITIVE TYPES: number, boolean, void, undefined, string, symbol, null
+- OBJECT TYPES: functions, arrays, classes, objects 
+
+Why do we care about types?
+- Types are used by the TS Compiler to analyze our code for errors
+- Types allow other engineers to understand what values are flowing around our codebase 
+
+Where do we use types?
+- everywhere!
+
+
+TYPES ANNOTATIONS + TYPE INFERENCE 
+
+Type annotations:
+- code we add to tell TS what type of value a variable will refer to
+- Developers tell TS the type 
+
+Type inference:
+- TS tries to figure it out what type of value a variable refers to
+- TS guesses the type 
+
+
+Type Inference: do eveything in one line and all will work just fine!
+
+const color - VARIABLE DECLARATION 
+'red' - VARIABLE INITIALIZATION
+
+const color = 'red' - variable delcaration + variable initialization 
+
+If declaration and initialization are on the same line, TS will figure it out the type of 'color' for us
+
+TYPE ANNOTATIONS & TYPE INFERENCE
+
+When to use Type Inference over Type Annotations? 
+- Rely on Type Inference as much as you can because code is cleaner 
+- 
+
+3 case scenarios when it is better to use Type Annotations over Type Inference:
+- when we delcare a variable on one line then initialize it later 
+- when we want a variable to have a type that can't be inferred 
+- when a function returns the 'any' type and we need to clarify the value 
+
+TYPE ANY:
+
+- a type just as 'string' or 'boolean' are
+- it means TS has no idea what this is - can't check for correct property references
+- avoid variables with 'any' at all costs 
+
+HOW TO FIX 'ANY' TYPE:
+
+- add type annotations to variables manually 
+
+TYPE SYSTEM:
+
+- only cares about types and NOT about logic inside your code 
+
+TYPED ARRAYS: 
+
+- Arrays where each element is some consistent type of value 
+
+WHY SHOULD WE USE TYPED ARRAYS?
+
+- TS can do type inference when extracting values from an arrays
+- TS can prevent us from adding incompatible values to the array 
+- TS we can get help with 'map', 'forEach', 'reduce' functions 
+- Flexible - arrays can still contain multiple different types 
+
+WHEN WE WILL USE TYPED ARRAYS:
+
+- any time we need to represent a collection of records with some arbitrary sort order 
+- a collection of different records
+
+TUPLES:
+
+- array-like structure where each element represents some property of a record 
+- the order in tuple has very specific meaning - we can't change it
+- we use tupels rarely with TS 
+
+INTERFACES: 
+
+- interfaces + classes = strong code reuse in TS 
+- you must understand them well
+- creates a new type, describing the property names and values types of an object 
+- thanks to interfaces we fix long type annotations 
+- we can assign any type we want inside interfaces not only primitive values 
+- we can assign functions property and instances
+- we can write reusable code with them 
+
+GENERAL STRATEGY FOR REUSABLE CODE IN TS:
+
+- create functions that accept arguments that are typed with interfaces
+- objects/classes can decide to 'implement' a given interface to work with a function
+
+CLASSES:
+
+- blueprint to create an object with some fields (values) and methods(functions) to represent a 'thing'
+
+INSTANCE METHOD MODIFIERS:
+
+- public - this method can be called any where, any time
+- private - this method can only be called by other methods in this class 
+- protected - this method can be called by other methods in this class, or by other methods in child classes
+
+WHERE TO USE CLASSES:
+
+- classes are used heavily in JS with TS 
+- interfaces + classes 
 
