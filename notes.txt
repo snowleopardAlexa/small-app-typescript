@@ -99,3 +99,14 @@ WHY SHOULD WE USE TYPED ARRAYS?
 - TS can prevent us from adding incompatible values to the array 
 - TS we can get help with 'map', 'forEach', 'reduce' functions 
 - Flexible - arrays can still contain multiple different types 
+
+WHEN WE WILL USE TYPED ARRAYS:
+
+- any time we need to represent a collection of records with some arbitrary sort order 
+- a collection of different records
+
+TUPLES:
+
+- array-like structure where each element represents some property of a record 
+- the order in tuple has very specific meaning - we can't change it
+- we use tupels rarely with TS 
