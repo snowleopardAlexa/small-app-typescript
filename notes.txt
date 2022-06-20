@@ -11,6 +11,34 @@ install axios
 
 npm install axios 
 
+WHAT IS TYPESCRIPT
+
+TYPESCRIPT = JAVASCRIPT = A TYPE SYSTEM
+
+A superset of JS. 
+
+A TYPE SYSTEM is additional to Typescript
+
+TYPE SYSTEM - helps us catch errors during development,
+Uses ‘type annotations’ to analyze our code
+Only active during development
+Doesn’t provide any performance optimization 
+
+Typescript Code - JS with type annotations - Typescript compiler - Plain old JS 
+Browser executes plain JS, has no idea we wrote TypeScript
+
+Writing TS is the same as writing JS with some extra documentation
+TS has no effect on how our code gets executed by the browser or Node
+It is best to think of TS as being like a friend sitting behind you while you are coding
+
+INSTALL TYPESCRIPT
+
+Nom install -g typescript ts-node - one time setup!
+
+MACOS - EACCESS error - add sudo to the front 
+
+Tsc —help - bunch of help commands
+
 
 TYPES 
 
